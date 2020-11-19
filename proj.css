@@ -1,0 +1,240 @@
+.main {
+    /*width: 2000px;*/
+    /*background-color:red;*/
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(FascinateInline-Regular.ttf);
+  } 
+.main h1 {
+   margin:0;
+    display: inline-block;
+    font-family:myFirstFont;
+      color:rgb(0, 255, 234);
+      font-size:400%;
+      /*color:white;*/
+  }
+.btn{
+    /*background-color: #4CAF50;/* Green */
+    border: none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: bold;
+    /*display: inline-block;*/
+    font-size: 16px;
+    border-radius:12px;
+  }
+.btn1{
+  background-color:blue;
+  color:black;
+  padding: 10px 32px;
+  border-radius:12px;
+}
+.btn2{
+  background-color:red;
+  color:black;
+  padding: 10px 32px;
+  border-radius:12px;
+}
+.para{
+
+	font-size:0%;
+}
+a.notif {
+  position: relative;
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: url('info.png');
+  background-size: contain;
+  text-decoration: none;
+}
+.num {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  color: #fff;
+}
+
+.btn:hover {background-color:red}
+.btn1:hover {background-color:white}
+.btn:active {
+  background-color: greenyellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+body{
+    background-image:url("imi.png");
+    /*background-position:center;*/
+    background-repeat: no-repeat;
+    position: relative;
+    /*background-size: cover;*padding: 15px 32px;*/
+}
+.box-2{
+    text-decoration:greenyellow;
+    color:black;
+  padding: 100px 100px;
+  text-align:left;
+}
+input {
+  /*  width:100%;*/
+    border: 1px solid yellowgreen;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    margin: 4px 8px;
+    padding: 8px 8px;
+    
+   /* color: white;*/
+  }
+  input[type=text]:focus {
+    width: 100%;
+  }
+form {
+    /*margin: 4px auto;*/
+    width:600px;
+    /*background-color:yellowgreen;*/
+    padding:8px 8px;
+    text-align:left;
+    padding:15px 32px;
+} 
+.box-2 h2{
+  font-size:250%;
+  //*text-shadow: 3px 2px red;*/
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

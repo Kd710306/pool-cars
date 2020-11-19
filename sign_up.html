@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Sign up</title>
+		<link rel="stylesheet" type="text/css" href="sign_up.css">
+	</head>
+	<body>
+	<script>var check = function() {
+  					if (document.getElementById('password').value ==document.getElementById('confirm').value) {
+						document.getElementById('message').style.color ='green';
+   	  					document.getElementById('message').innerHTML ='matching';
+	  					document.getElementById("submit").disabled=false;
+  						}
+					else
+						{
+    							document.getElementById('message').style.color = 'red';
+    							document.getElementById('message').innerHTML = 'not matching';
+	  						document.getElementById("submit").disabled=True;
+						}
+					}
+	</script>
+		<h1><u>Pool Car</u></h1>
+		<form action="sign_up.php" method="post">
+			First Name <input type="text" name="Fname">
+			Last Name <input type="text" name="Lname"><br><br>
+			Age <input type="text" name="Age"><br><br>
+			Aadhar no. <input type="text" name="AadharNo"pattern="[0-9]{12}"><br><br>
+			Bloodgroup <input type="text" name="Bloodgroup" pattern="[ABO]{1}[AB+-]{1}"><br><br>
+			Nation <select name="Nationality">
+				<option>India</option>
+				<option>Bangladesh</option>
+				<option>Nepal</option>
+			</select>
+			State <select name="State">
+				<option>West Bengal</option>
+				<option>Bihar</option>
+			</select>
+			<br><br>
+			District <select name="District">
+                                <option>West Bengal</option>
+                                <option>Bihar</option>
+                        </select>
+                        <br><br>
+			Sex <input type="text" name="Sex"><br><br>
+			Mobile no <input type="text" name="MobileNo" pattern="[0-9]{10}">
+			<br><br>
+			Pan No. <input type="text" name="PanNo"pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"><br><br>
+			Driving Licence No. <input type="text" name="DrivingLicenceNo" pattern="[A-Z]{2}[0-9]{13}"><br><br>
+			Profession <input type="text" name="Profession"><br><br>
+			Bank Account No. <input type="text" name="BankAccountNo"><br><br>
+			Address <input type="text" name="CurrentAddress"><br><br>
+			Password <input type="password" id="password" name="Password">
+			<br><br>
+			Confirm Password <input type="password" id="confirm" name="confirm" onkeyup="check()">
+			<span id='message'></span><br><br>
+			<input type="submit" name="Sign Up" value ="Sign Up" id="submit" disabled>
+		</form>
+	</body>
+</html>
